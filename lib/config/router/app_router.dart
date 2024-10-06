@@ -1,5 +1,3 @@
-import 'package:design_patterns/features/adapter/presentation/screen/adapter_example_screen.dart';
-import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -8,7 +6,10 @@ import '../../features/builder/presentation/screen/builder_example.dart';
 import '../../features/error_screen/presentation/screen/error_screen.dart';
 import 'package:design_patterns/features/factory_method/factory_method.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
+import '../../features/composite/presentation/screen/composite_example_screen.dart';
+import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree.dart';
 import 'package:design_patterns/features/abstract_factory/presentation/screen/screen.dart';
+import 'package:design_patterns/features/adapter/presentation/screen/adapter_example_screen.dart';
 
 part 'app_router.g.dart';
 
@@ -57,7 +58,10 @@ GoRouter appRouter (AppRouterRef ref) {
         builder : (context, state) => const BridgeExample(),
       ),
 
-
+      GoRoute(
+        path    : CompositeExample.path,
+        builder : (context, state) => const CompositeExample(),
+      ),
 
 ///////////////////////////////////////////////////
       GoRoute(

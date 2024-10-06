@@ -8,6 +8,7 @@ class CustomersDatatable extends StatelessWidget {
   final List<Customer> customers;
 
   const CustomersDatatable({
+    super.key, 
     required this.customers,
   });
 
@@ -20,7 +21,7 @@ class CustomersDatatable extends StatelessWidget {
         horizontalMargin: 20,
         headingRowHeight: 20,
         dataRowMinHeight: 20,
-        columns: const <DataColumn>[
+        columns: const [
           DataColumn(
             label: Text(
               'Name',

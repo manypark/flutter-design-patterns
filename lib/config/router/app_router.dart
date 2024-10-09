@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+import '../../features/decorator/screens/decorator_example_screen.dart';
 import '../../features/prototype/presentation/screen/prototype.dart';
 import '../../features/builder/presentation/screen/builder_example.dart';
 import '../../features/error_screen/presentation/screen/error_screen.dart';
@@ -61,6 +62,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : CompositeExample.path,
         builder : (context, state) => const CompositeExample(),
+      ),
+
+      GoRoute(
+        path    : DecoratorExampleScreen.path,
+        builder : (context, state) => const DecoratorExampleScreen(),
       ),
 
 ///////////////////////////////////////////////////

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../bridge/presentation/screen/bridge_scree.dart';
+import '../../../../decorator/screens/decorator_example_screen.dart';
 import '../../../../adapter/presentation/screen/adapter_example_screen.dart';
 import '../../../../composite/presentation/screen/composite_example_screen.dart';
 
@@ -46,7 +47,8 @@ class StructurallListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Decorator'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push( DecoratorExampleScreen.path ),
+                // DecoratorExampleScreen
               ),
           
               const Divider(height: 1, thickness: 0.5,),

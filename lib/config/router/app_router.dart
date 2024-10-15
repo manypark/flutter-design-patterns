@@ -6,6 +6,7 @@ import '../../features/prototype/presentation/screen/prototype.dart';
 import '../../features/builder/presentation/screen/builder_example.dart';
 import '../../features/error_screen/presentation/screen/error_screen.dart';
 import 'package:design_patterns/features/factory_method/factory_method.dart';
+import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
 import '../../features/composite/presentation/screen/composite_example_screen.dart';
 import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree.dart';
@@ -67,6 +68,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : DecoratorExampleScreen.path,
         builder : (context, state) => const DecoratorExampleScreen(),
+      ),
+      
+      GoRoute(
+        path    : FacadeExample.path,
+        builder : (context, state) => const FacadeExample(),
       ),
 
 ///////////////////////////////////////////////////

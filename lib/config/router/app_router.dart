@@ -1,10 +1,11 @@
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../features/decorator/screens/decorator_example_screen.dart';
 import '../../features/prototype/presentation/screen/prototype.dart';
+import '../../features/decorator/screens/decorator_example_screen.dart';
 import '../../features/builder/presentation/screen/builder_example.dart';
 import '../../features/error_screen/presentation/screen/error_screen.dart';
+import '../../features/proxy/presentation/screen/proxy_example_screen.dart';
 import 'package:design_patterns/features/factory_method/factory_method.dart';
 import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
@@ -79,6 +80,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : FlyweightExample.path,
         builder : (context, state) => const FlyweightExample(),
+      ),
+
+      GoRoute(
+        path    : ProxyExampleScreen.path,
+        builder : (context, state) => const ProxyExampleScreen(),
       ),
 
 ///////////////////////////////////////////////////

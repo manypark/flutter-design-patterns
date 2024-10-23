@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+
+import '../../../../chain_of_responsibility/presentation/screen/chain_of_responsibility_example_screen.dart';
 
 class BehaviorListView extends StatelessWidget {
 
@@ -15,7 +18,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Chain of Responsibility'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(ChainOfResponsibilityExample.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),

@@ -1,3 +1,4 @@
+import 'package:design_patterns/features/command/presentation/screen/command_example_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -26,7 +27,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Command'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(CommandExampleScreen.path),
               ),
     
               const Divider(height: 1, thickness: 0.5,),

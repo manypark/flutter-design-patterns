@@ -9,6 +9,7 @@ import '../../features/proxy/presentation/screen/proxy_example_screen.dart';
 import 'package:design_patterns/features/factory_method/factory_method.dart';
 import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
+import '../../features/command/presentation/screen/command_example_screen.dart';
 import '../../features/flyweight/presentation/screen/flyweight_example_screen.dart';
 import '../../features/composite/presentation/screen/composite_example_screen.dart';
 import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree.dart';
@@ -93,6 +94,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : ChainOfResponsibilityExample.path,
         builder : (context, state) => const ChainOfResponsibilityExample(),
+      ),
+
+      GoRoute(
+        path    : CommandExampleScreen.path,
+        builder : (context, state) => const CommandExampleScreen(),
       ),
 
 ///////////////////////////////////////////////////

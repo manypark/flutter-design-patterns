@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../chain_of_responsibility/presentation/screen/chain_of_responsibility_example_screen.dart';
+import '../../../../iterator/presentation/screen/iterator_example_screen.dart';
 
 class BehaviorListView extends StatelessWidget {
 
@@ -43,7 +44,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Iterator'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(IteratorExampleScreen.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),

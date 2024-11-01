@@ -1,7 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../features/iterator/presentation/screen/iterator_example_screen.dart';
 import '../../features/prototype/presentation/screen/prototype.dart';
 import '../../features/decorator/screens/decorator_example_screen.dart';
 import '../../features/builder/presentation/screen/builder_example.dart';
@@ -11,6 +10,8 @@ import 'package:design_patterns/features/factory_method/factory_method.dart';
 import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
 import '../../features/command/presentation/screen/command_example_screen.dart';
+import '../../features/iterator/presentation/screen/iterator_example_screen.dart';
+import '../../features/mediator/presentation/screen/mediator_example_screen.dart';
 import '../../features/flyweight/presentation/screen/flyweight_example_screen.dart';
 import '../../features/composite/presentation/screen/composite_example_screen.dart';
 import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree.dart';
@@ -105,6 +106,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : IteratorExampleScreen.path,
         builder : (context, state) => const IteratorExampleScreen(),
+      ),
+      
+      GoRoute(
+        path    : MediatorExample.path,
+        builder : (context, state) => const MediatorExample(),
       ),
 
 ///////////////////////////////////////////////////

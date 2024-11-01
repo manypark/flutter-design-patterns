@@ -75,33 +75,33 @@ class MediatorExampleState extends State<MediatorExample> {
           children          : [
       
             PlatformButton(
-              text: "Admin: Send 'Hello' to all",
-              materialColor: Colors.black,
-              materialTextColor: Colors.white,
-              onPressed: _sendToAll,
+              text              : "Admin: Send 'Hello' to all",
+              materialColor     : Colors.black,
+              materialTextColor : Colors.white,
+              onPressed         : _sendToAll,
             ),
 
             PlatformButton(
-              text: "Admin: Send 'BUG!' to QA",
-              materialColor: Colors.black,
-              materialTextColor: Colors.white,
-              onPressed: _sendToQa,
+              text              : "Admin: Send 'BUG!' to QA",
+              materialColor     : Colors.black,
+              materialTextColor : Colors.white,
+              onPressed         : _sendToQa,
             ),
 
             PlatformButton(
-              text: "Admin: Send 'Hello, World!' to Developers",
-              materialColor: Colors.black,
-              materialTextColor: Colors.white,
-              onPressed: _sendToDevelopers,
+              text              : "Admin: Send 'Hello, World!' to Developers",
+              materialColor     : Colors.black,
+              materialTextColor : Colors.white,
+              onPressed         : _sendToDevelopers,
             ),
 
             const Divider(),
 
             PlatformButton(
-              text: "Add team member",
-              materialColor: Colors.black,
-              materialTextColor: Colors.white,
-              onPressed: _addTeamMember,
+              text              : "Add team member",
+              materialColor     : Colors.black,
+              materialTextColor : Colors.white,
+              onPressed         : _addTeamMember,
             ),
       
             const SizedBox(height: 30),

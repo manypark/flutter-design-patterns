@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../memento/presentation/screen/memento_example_screen.dart';
 import '../../../../iterator/presentation/screen/iterator_example_screen.dart';
 import '../../../../mediator/presentation/screen/mediator_example_screen.dart';
 import 'package:design_patterns/features/command/presentation/screen/command_example_screen.dart';
@@ -61,7 +62,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Memento'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(MementoExampleScreen.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),

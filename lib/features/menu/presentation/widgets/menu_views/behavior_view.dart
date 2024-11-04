@@ -1,3 +1,4 @@
+import 'package:design_patterns/features/observer/presentation/screen/observer_example_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -70,7 +71,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Observer'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(ObserverExample.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),

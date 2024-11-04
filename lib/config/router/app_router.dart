@@ -12,6 +12,7 @@ import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
 import '../../features/memento/presentation/screen/memento_example_screen.dart';
 import '../../features/command/presentation/screen/command_example_screen.dart';
 import '../../features/iterator/presentation/screen/iterator_example_screen.dart';
+import '../../features/observer/presentation/screen/observer_example_screen.dart';
 import '../../features/mediator/presentation/screen/mediator_example_screen.dart';
 import '../../features/flyweight/presentation/screen/flyweight_example_screen.dart';
 import '../../features/composite/presentation/screen/composite_example_screen.dart';
@@ -117,6 +118,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : MementoExampleScreen.path,
         builder : (context, state) => const MementoExampleScreen(),
+      ),
+
+      GoRoute(
+        path    : ObserverExample.path,
+        builder : (context, state) => const ObserverExample(),
       ),
 
 ///////////////////////////////////////////////////

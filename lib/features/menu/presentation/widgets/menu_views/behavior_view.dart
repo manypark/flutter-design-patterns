@@ -1,11 +1,12 @@
-import 'package:design_patterns/features/observer/presentation/screen/observer_example_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../state/presentation/screen/state_example_screen.dart';
 import '../../../../memento/presentation/screen/memento_example_screen.dart';
 import '../../../../iterator/presentation/screen/iterator_example_screen.dart';
 import '../../../../mediator/presentation/screen/mediator_example_screen.dart';
 import 'package:design_patterns/features/command/presentation/screen/command_example_screen.dart';
+import 'package:design_patterns/features/observer/presentation/screen/observer_example_screen.dart';
 import '../../../../chain_of_responsibility/presentation/screen/chain_of_responsibility_example_screen.dart';
 
 class BehaviorListView extends StatelessWidget {
@@ -79,7 +80,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('State'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(StateExampleScreen.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),

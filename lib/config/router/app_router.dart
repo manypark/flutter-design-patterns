@@ -6,11 +6,13 @@ import '../../features/decorator/screens/decorator_example_screen.dart';
 import '../../features/builder/presentation/screen/builder_example.dart';
 import '../../features/error_screen/presentation/screen/error_screen.dart';
 import '../../features/proxy/presentation/screen/proxy_example_screen.dart';
+import '../../features/state/presentation/screen/state_example_screen.dart';
 import 'package:design_patterns/features/factory_method/factory_method.dart';
 import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
 import '../../features/memento/presentation/screen/memento_example_screen.dart';
 import '../../features/command/presentation/screen/command_example_screen.dart';
+import '../../features/strategy/presentation/screen/strategy_example_screen.dart';
 import '../../features/iterator/presentation/screen/iterator_example_screen.dart';
 import '../../features/observer/presentation/screen/observer_example_screen.dart';
 import '../../features/mediator/presentation/screen/mediator_example_screen.dart';
@@ -20,7 +22,6 @@ import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree
 import 'package:design_patterns/features/abstract_factory/presentation/screen/screen.dart';
 import 'package:design_patterns/features/adapter/presentation/screen/adapter_example_screen.dart';
 import '../../features/chain_of_responsibility/presentation/screen/chain_of_responsibility_example_screen.dart';
-import '../../features/state/presentation/screen/state_example_screen.dart';
 
 part 'app_router.g.dart';
 
@@ -129,6 +130,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : StateExampleScreen.path,
         builder : (context, state) => const StateExampleScreen(),
+      ),
+
+      GoRoute(
+        path    : StrategyExampleScreen.path,
+        builder : (context, state) => const StrategyExampleScreen(),
       ),
 
 ///////////////////////////////////////////////////

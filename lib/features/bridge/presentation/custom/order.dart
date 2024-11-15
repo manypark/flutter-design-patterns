@@ -22,8 +22,8 @@ class Order extends EntityBase {
         super.fromJson();
 
   Map<String, dynamic> toJson() => {
-        'id': id,
-        'dishes': dishes,
-        'total': total,
-      };
+    'id': id,
+    'dishes': dishes,
+    'total': total,
+  };
 }

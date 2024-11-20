@@ -22,6 +22,7 @@ import 'package:design_patterns/features/bridge/presentation/screen/bridge_scree
 import 'package:design_patterns/features/abstract_factory/presentation/screen/screen.dart';
 import 'package:design_patterns/features/adapter/presentation/screen/adapter_example_screen.dart';
 import '../../features/chain_of_responsibility/presentation/screen/chain_of_responsibility_example_screen.dart';
+import '../../features/template_method/presentation/screen/template_method_example_screen.dart';
 
 part 'app_router.g.dart';
 
@@ -135,6 +136,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : StrategyExampleScreen.path,
         builder : (context, state) => const StrategyExampleScreen(),
+      ),
+
+      GoRoute(
+        path    : TemplateMethodExample.path,
+        builder : (context, state) => const TemplateMethodExample(),
       ),
 
 ///////////////////////////////////////////////////

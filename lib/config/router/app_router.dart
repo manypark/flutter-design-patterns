@@ -11,6 +11,7 @@ import 'package:design_patterns/features/factory_method/factory_method.dart';
 import '../../features/facade/presentation/screens/facade_example_screen.dart';
 import 'package:design_patterns/features/menu/presentation/screen/screen.dart';
 import '../../features/memento/presentation/screen/memento_example_screen.dart';
+import '../../features/visitor/presentation/screen/visitor_example_screen.dart';
 import '../../features/command/presentation/screen/command_example_screen.dart';
 import '../../features/strategy/presentation/screen/strategy_example_screen.dart';
 import '../../features/iterator/presentation/screen/iterator_example_screen.dart';
@@ -141,6 +142,11 @@ GoRouter appRouter (AppRouterRef ref) {
       GoRoute(
         path    : TemplateMethodExample.path,
         builder : (context, state) => const TemplateMethodExample(),
+      ),
+
+      GoRoute(
+        path    : VisitorExampleScreen.path,
+        builder : (context, state) => const VisitorExampleScreen(),
       ),
 
 ///////////////////////////////////////////////////

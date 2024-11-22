@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../state/presentation/screen/state_example_screen.dart';
 import '../../../../memento/presentation/screen/memento_example_screen.dart';
+import '../../../../visitor/presentation/screen/visitor_example_screen.dart';
 import '../../../../iterator/presentation/screen/iterator_example_screen.dart';
 import '../../../../mediator/presentation/screen/mediator_example_screen.dart';
 import '../../../../template_method/presentation/screen/template_method_example_screen.dart';
@@ -106,7 +107,7 @@ class BehaviorListView extends StatelessWidget {
               ListTile(
                 title   : const Text('Visitor'),
                 trailing: const Icon( Icons.arrow_forward_ios_rounded ),
-                onTap   : () {},
+                onTap   : () => context.push(VisitorExampleScreen.path),
               ),
           
               const Divider(height: 1, thickness: 0.5,),
